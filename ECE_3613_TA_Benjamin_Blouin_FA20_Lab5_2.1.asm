@@ -1,4 +1,3 @@
-```
 ;
 ; AssemblerApplication1.asm
 ;
@@ -145,4 +144,3 @@ divide:
 
     out porta, counter
 	rjmp main
-```
