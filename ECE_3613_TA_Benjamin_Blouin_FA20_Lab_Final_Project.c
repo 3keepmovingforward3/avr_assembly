@@ -148,16 +148,16 @@ PORTA ^= (1<<PINA6);
 
     // LCD Output
     //
-OLED_DisplayString("RPM: ");
-OLED_DisplayNumber(C_DECIMAL_U8, counter, 3);
-OLED_GoToNextLine();
-OLED_DisplayString("Duty Cycle: ");
-OLED_DisplayNumber(E_DECIMAL, button_step*10, 3);
+    OLED_DisplayString("RPM: ");
+    OLED_DisplayNumber(C_DECIMAL_U8, counter, 3);
+    OLED_GoToNextLine();
+    OLED_DisplayString("Duty Cycle: ");
+    OLED_DisplayNumber(E_DECIMAL, button_step*10, 3);
     OLED_DisplayString("%");
     OLED_GoToNextLine();
     OLED_DisplayString("OCR2A: ");
     OLED_DisplayNumber(E_DECIMAL, OCR2A, 3);
-OLED_SetCursor(0,0);
+    OLED_SetCursor(0,0);
 
     counter = 0; // reset accumulator
 
